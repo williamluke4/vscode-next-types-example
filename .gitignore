@@ -1,0 +1,13 @@
+.vercel
+.next
+node_modules
+.DS_Store
+.env
+.vscode
+.yarn/*
+dist
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions

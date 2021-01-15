@@ -1,0 +1,47 @@
+{
+  "name": "vscode-types-example",
+  "description": "Static site with Next.js 9.3 and Prisma.",
+  "version": "0.0.0-dripip",
+  "author": {
+    "name": "William Luke",
+    "email": "william@atto-byte.com",
+    "url": "https://github.com/williamluke4"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamluke4/prisma-next.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "yarn db:dev && yarn next:dev",
+    "build": "next build",
+    "start": "next start",
+    "db": "prisma studio --experimental",
+    "doctor": "prisma doctor",
+    "next:dev": "next",
+    "db:dev": "prisma migrate dev --preview-feature",
+    "db:generate": "prisma generate",
+    "push": "yarn db:save & yarn db:up && yarn db:generate"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.0.0",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "11.0.0",
+    "@prisma/client": "^2.14.0",
+    "chokidar": "^3.5.0",
+    "framer-motion": "^3.2.1",
+    "next": "^10.0.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "swr": "^0.4.0"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.14.0",
+    "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0",
+    "typescript": "^4.1.3"
+  }
+}
